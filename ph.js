@@ -58,3 +58,29 @@ function findMax(arr) {
 console.log(findMax([5, 1, 9, 3]));
 
 
+// 5. Remove Duplicates from an Array
+
+function removeDuplicates(arr) {
+    let result = [];
+    
+    for (let i = 0; i < arr.length; i++) {
+        let found = false;
+        
+        for (let j = 0; j < result.length; j++) {
+            if (result[j] === arr[i]) {
+                found = true;
+                break;
+            }
+        }
+        
+        if (!found) {
+            result.push(arr[i]);
+        }
+    }
+    
+    return result;
+}
+
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));
+
+
