@@ -12,3 +12,20 @@ function stringReverse(str){
 console.log(stringReverse("hello")) 
 
 
+// 2. Count Vowels in a String
+function vowelsCount(str){
+    let count = 0;
+    const vowels = "aeiouAEIOU";
+    for (let i = 0; i < str.length; i++){
+        if(vowels.includes(str[i])){
+            count++;
+
+        }
+    }
+
+    return count;
+
+}
+
+console.log(vowelsCount("programming")) 
+
