@@ -142,3 +142,23 @@ function factorial(num) {
 
 console.log(factorial(5));
 
+// 10. PingPong Challenge
+function pingPong() {
+    let output = [];
+    
+    for (let i = 1; i <= 20; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            output.push("PingPong");
+        } else if (i % 3 === 0) {
+            output.push("Ping");
+        } else if (i % 5 === 0) {
+            output.push("Pong");
+        } else {
+            output.push(i.toString());
+        }
+    }
+    
+    return output.join(", ");
+}
+
+console.log(pingPong());
