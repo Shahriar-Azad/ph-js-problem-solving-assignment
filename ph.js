@@ -98,3 +98,18 @@ function sumArray(arr) {
 
 console.log(sumArray([1, 2, 3, 4]));
 
+// 7. Find Even Numbers in an Array
+function findEvenNumbers(arr) {
+    let evenNumbers = [];
+    
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            evenNumbers.push(arr[i]);
+        }
+    }
+    
+    return evenNumbers;
+}
+
+console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));
+
